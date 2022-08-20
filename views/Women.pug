@@ -1,0 +1,62 @@
+extends home 
+
+block layout-content      
+   #carouselExampleIndicators.carousel.slide(data-bs-ride='carousel')
+     .carousel-indicators
+        button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+     .carousel-inner
+        .carousel-item.active
+          //https://www.pexels.com/photo/a-woman-in-hijab-wearing-a-metal-face-mask-9881819/
+          img.d-block.w-100(src='/images/wm1.jpg' alt='a-woman-in-hijab-wearing-a-metal-face-mask')
+        .carousel-item
+          //https://www.pexels.com/photo/a-woman-wearing-a-white-crop-top-riding-a-motorcycle-9607328/
+          img.d-block.w-100(src='/images/wm2.jpg' alt='a-woman-wearing-a-white-crop-top-riding-a-motorcycle')
+        .carousel-item
+          //https://www.pexels.com/photo/close-up-photo-of-happy-woman-10081940/
+          img.d-block.w-100(src='/images/wm3.jpg' alt='close-up-photo-of-happy-woman')
+     button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+       span.carousel-control-prev-icon(aria-hidden='true')
+       span.visually-hidden Previous
+     button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+       span.carousel-control-next-icon(aria-hidden='true')
+       span.visually-hidden Next  
+   div.box1 
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/a-beautiful-woman-wearing-brown-leather-jacket-9608551/
+           img.card-img-top(src='/images/ws1.jpg' alt='a-beautiful-woman-wearing-brown-leather-jacket')
+         .card-body
+            h5.card-title Weekend Wear.
+            p.card-text
+            | Somthing Special.
+            a.btn.btn-primary(href='/cart') Add to the cart
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/portrait-of-a-woman-in-a-shirt-12167560/
+           img.card-img-top(src='/images/ws2.jpg' alt='portrait-of-a-woman-in-a-shirt')
+         .card-body
+            h5.card-title Hot Summer
+            p.card-text
+            | Summer Shirts.
+            a.btn.btn-primary(href='/cart') Add to the Cart
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/woman-standing-by-the-balcony-railing-12167548/
+           img.card-img-top(src='/images/ws3.jpg' alt='woman-standing-by-the-balcony-railing')
+         .card-body
+            h5.card-title Black Love
+            p.card-text
+            | Linen wear.
+            a.btn.btn-primary(href='/cart') Add to the Cart
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/woman-standing-on-the-roof-12167528/
+           img.card-img-top(src='/images/ws4.jpg' alt='woman-standing-on-the-roof')
+         .card-body
+            h5.card-title Rugged Love
+            p.card-text
+            |  Rugged Jeans.
+            a.btn.btn-primary(href='/cart') Add to the Cart   
+                

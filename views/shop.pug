@@ -1,0 +1,61 @@
+extends home 
+
+block layout-content      
+   #carouselExampleIndicators.carousel.slide(data-bs-ride='carousel')
+     .carousel-indicators
+        button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+     .carousel-inner
+        .carousel-item.active
+          //https://www.pexels.com/photo/man-standing-on-street-839011/
+          img.d-block.w-100(src='/images/img7.jpg' alt='man-standing-on-street')
+        .carousel-item
+          //https://www.pexels.com/photo/trendy-young-black-man-in-casual-outfit-standing-in-white-studio-6311250/
+          img.d-block.w-100(src='/images/img8.jpg' alt='trendy-young-black-man-in-casual-outfit-standing-in-white-studio')
+        .carousel-item
+          //https://www.pexels.com/photo/diverse-young-people-in-casual-clothes-looking-at-camera-9256867/
+          img.d-block.w-100(src='/images/img9.jpg' alt='diverse-young-people-in-casual-clothes-looking-at-camera')
+     button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+       span.carousel-control-prev-icon(aria-hidden='true')
+       span.visually-hidden Previous
+     button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+       span.carousel-control-next-icon(aria-hidden='true')
+       span.visually-hidden Next  
+   div.box1 
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/man-wearing-black-hat-and-black-coat-157675/
+           img.card-img-top(src='/images/men1.jpg' alt='man-wearing-black-hat-and-black-coat')
+         .card-body
+            h5.card-title Weekend Wear.
+            p.card-text
+            | Somthing Special.
+            a.btn.btn-primary(href='/cart') Add to the cart
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/person-wearing-orange-crew-neck-t-shirt-and-blue-shorts-2480519/
+           img.card-img-top(src='/images/men5.jpg' alt='person-wearing-orange-crew-neck-t-shirt-and-blue-shorts')
+         .card-body
+            h5.card-title Levis Love
+            p.card-text
+            | Summer Shorts.
+            a.btn.btn-primary(href='/cart') Add to the Cart
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/confident-serious-man-with-trendy-hairstyle-5191436/
+           img.card-img-top(src='/images/men3.jpg' alt='confident-serious-man-with-trendy-hairstyle')
+         .card-body
+            h5.card-title Linen
+            p.card-text
+            | Linen wear.
+            a.btn.btn-primary(href='/cart') Add to the Cart
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/stylish-black-man-in-white-hoodie-standing-near-wall-6311678/
+           img.card-img-top(src='/images/men6.jpg' alt='stylish-black-man-in-white-hoodie-standing-near-wall')
+         .card-body
+            h5.card-title Cotton Love
+            p.card-text
+            |  Cotton Hoods.
+            a.btn.btn-primary(href='/cart') Add to Cart    

@@ -1,0 +1,54 @@
+extends home 
+
+block layout-content 
+  
+   #carouselExampleIndicators.carousel.slide(data-bs-ride='carousel')
+     .carousel-indicators
+        button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+     .carousel-inner
+        .carousel-item.active
+          //https://www.pexels.com/photo/woman-in-white-robe-holding-white-tablet-computer-8939791 /
+          img.d-block.w-100(src='/images/img1.jpg' alt='...')
+        .carousel-item
+          //https://www.pexels.com/photo/woman-in-blue-shirt-holding-brown-cardboard-box-8939788/
+          img.d-block.w-100(src='/images/img2.jpg' alt='...')
+        .carousel-item
+          //https://www.pexels.com/photo/food-man-people-woman-8939569/
+          img.d-block.w-100(src='/images/img3.jpg' alt='...')
+     button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+       span.carousel-control-prev-icon(aria-hidden='true')
+       span.visually-hidden Previous
+     button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+       span.carousel-control-next-icon(aria-hidden='true')
+       span.visually-hidden Next
+   div.block
+     .card(style='width: 18rem;')
+       .card-body
+         h5.card-title Special Summer Collection
+         p.card-text Grab Summer Deals For Men.
+         a.btn.btn-primary(href='/shop') Click Here
+     .card.text-center(style='width: 18rem;')
+       .card-body
+         h5.card-title Special Summer Collection
+         p.card-text Grab Summer Deals For Women.
+         a.btn.btn-primary(href='/Women') Click Here
+     .card.text-end(style='width: 18rem;')
+        .card-body
+          h5.card-title Special Summer Collection
+          p.card-text Grab Summer Deals For Kids.
+          a.btn.btn-primary(href='/Kid') Click Here
+   div.container-md-100
+        .card1(style='width: 120rem; height:18rem')
+          .card-body1
+             p.con Weekend Sale.
+             p.con 50% Off
+             p.con Now Get 50% off discount on every purchase 
+                
+             
+
+    
+        
+
+

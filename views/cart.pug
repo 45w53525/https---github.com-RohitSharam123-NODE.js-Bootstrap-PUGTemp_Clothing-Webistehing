@@ -1,0 +1,20 @@
+extends home 
+
+block layout-content
+  h1.heading Please Register Your Account
+  form.row.g-3.needs-validation(novalidate='')
+  .col-md-4.mt-5
+    label.form-label(for='validationCustom01') First name
+    input#validationCustom01.form-control(type='text' value='' required='')
+    form
+      .mb-3
+        label.form-label(for='exampleInputEmail1') Email address
+        input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+        #emailHelp.form-text 
+      .mb-3
+        label.form-label(for='exampleInputPassword1') Password
+        input#exampleInputPassword1.form-control(type='password')
+      .mb-3.form-check
+        input#exampleCheck1.form-check-input(type='checkbox')
+        label.form-check-label(for='exampleCheck1') Check me out
+      button.btn.btn-primary.ms-5(type='submit') Submit

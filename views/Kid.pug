@@ -1,0 +1,61 @@
+extends home 
+
+block layout-content      
+   #carouselExampleIndicators.carousel.slide(data-bs-ride='carousel')
+     .carousel-indicators
+        button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+     .carousel-inner
+        .carousel-item.active
+          //https://www.pexels.com/photo/two-children-standing-near-concrete-fence-35188/
+          img.d-block.w-100(src='/images/kid1.jpg' alt='two-children-standing-near-concrete-fence')
+        .carousel-item
+          //https://www.pexels.com/photo/black-boy-with-toy-dinosaurs-on-light-background-7139728/
+          img.d-block.w-100(src='/images/kid2.jpg' alt='black-boy-with-toy-dinosaurs-on-light-background')
+        .carousel-item
+          //https://www.pexels.com/photo/a-girl-kneeling-on-the-floor-6349554/
+          img.d-block.w-100(src='/images/kid3.jpg' alt='a-girl-kneeling-on-the-floor')
+     button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+       span.carousel-control-prev-icon(aria-hidden='true')
+       span.visually-hidden Previous
+     button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+       span.carousel-control-next-icon(aria-hidden='true')
+       span.visually-hidden Next  
+   div.box1 
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/stylish-ethnic-boy-with-hands-in-pockets-in-studio-5560019/
+           img.card-img-top(src='/images/ks1.jpg' alt='stylish-ethnic-boy-with-hands-in-pockets-in-studio')
+         .card-body
+            h5.card-title Confort fit.
+            p.card-text
+            | Special.
+            a.btn.btn-primary(href='/cart') Add to the cart
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/crossed-leg-girl-sitting-on-stairs-and-looking-at-the-camera-3394406/
+           img.card-img-top(src='/images/ks2.jpg' alt='crossed-leg-girl-sitting-on-stairs-and-looking-at-the-camera')
+         .card-body
+            h5.card-title Linen Love
+            p.card-text
+            | Summer  Special.
+            a.btn.btn-primary(href='/cart') Add to the Cart
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/cheerful-little-girl-riding-penny-board-5622336/
+           img.card-img-top(src='/images/ks3.jpg' alt='cheerful-little-girl-riding-penny-board')
+         .card-body
+            h5.card-title Denim Love
+            p.card-text
+            | Denim wear.
+            a.btn.btn-primary(href='/cart') Add to the Cart
+       div.it
+         .card(style='width: 18rem;')
+           //https://www.pexels.com/photo/little-girl-swinging-and-smiling-8535669/
+           img.card-img-top(src='/images/ks4.jpg' alt='little-girl-swinging-and-smiling')
+         .card-body
+            h5.card-title Cotton Love
+            p.card-text
+            |  Cotton  Collection.
+            a.btn.btn-primary(href='/cart') Go somewhere    
